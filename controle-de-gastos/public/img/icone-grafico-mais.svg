@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="73mm" height="33mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 7300 3300"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:#FEFEFE;fill-rule:nonzero}
+    .fil0 {fill:#D2D3D5;fill-rule:nonzero}
+    .fil1 {fill:#00A859;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="7265,13 7265,3287 1161,3287 35,1650 1161,13 "/>
+  <g id="_2036909826768">
+   <path class="fil1" d="M2577 1650c0,702 -569,1271 -1271,1271 -702,0 -1271,-569 -1271,-1271 0,-702 569,-1271 1271,-1271 702,0 1271,569 1271,1271z"/>
+   <path class="fil2" d="M860 1349c262,-67 458,-275 576,-438 5,-7 7,-17 5,-26 -2,-9 -7,-17 -16,-22l-139 -79 314 -101 24 299 -89 -58c-7,-5 -16,-7 -24,-5 -9,2 -17,7 -21,14 -1,2 -108,166 -271,291 -148,114 -292,161 -431,140 22,-4 46,-8 72,-15zm-282 6c89,53 181,79 275,79 133,0 271,-53 408,-159 132,-102 227,-225 265,-278l118 77c11,7 24,7 35,0 11,-6 17,-18 16,-31l-33 -407c0,-10 -6,-19 -14,-25 -9,-6 -19,-7 -29,-4l-425 137c-12,4 -21,15 -23,28 -1,13 6,26 17,32l172 98c-112,147 -286,322 -512,382 -144,38 -243,11 -244,11 -16,-4 -32,4 -39,19 -7,15 -1,33 13,41z"/>
+   <path class="fil2" d="M1620 2251l0 -942c0,-23 19,-41 41,-41l166 0c22,0 40,18 40,41l0 942 -247 0zm-472 0l0 -653c0,-22 18,-41 40,-41l166 0c22,0 40,19 40,41l0 653 -246 0zm-460 0l0 -359c0,-22 18,-41 41,-41l166 0c22,0 40,19 40,41l0 359 -247 0zm1416 0l-171 0 0 -942c0,-59 -48,-107 -106,-107l-166 0c-59,0 -106,48 -106,107l0 942 -95 0 0 -653c0,-59 -48,-106 -106,-106l-166 0c-59,0 -106,47 -106,106l0 653 -81 0 0 -359c0,-59 -48,-107 -106,-107l-166 0c-59,0 -107,48 -107,107l0 359 -161 0c-18,0 -33,15 -33,33 0,18 15,33 33,33l1643 0c18,0 33,-15 33,-33 0,-18 -15,-33 -33,-33z"/>
+  </g>
+ </g>
+</svg>
