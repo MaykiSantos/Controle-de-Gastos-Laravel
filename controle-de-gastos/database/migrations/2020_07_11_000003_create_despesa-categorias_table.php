@@ -13,7 +13,7 @@ class CreateDespesaCategoriasTable extends Migration
      */
     public function up()
     {
-        Schema::create('despesa-categorias', function (Blueprint $table){
+        Schema::create('despesa_categorias', function (Blueprint $table){
            $table->id();
            $table->string('categoria', 15);
         });

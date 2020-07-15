@@ -23,7 +23,7 @@ class CreateReceitasTable extends Migration
             $table->timestamps();
 
             $table->foreign('id_user')->references('id')->on('users');
-            $table->foreign('id_rec_cat')->references('id')->on('receita-categorias');
+            $table->foreign('id_rec_cat')->references('id')->on('receita_categorias');
         });
     }
 

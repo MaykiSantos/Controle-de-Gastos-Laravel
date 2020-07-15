@@ -13,7 +13,7 @@ class CreateReservaCategoriasTable extends Migration
      */
     public function up()
     {
-        Schema::create('reserva-categorias', function (Blueprint $table){
+        Schema::create('reserva_categorias', function (Blueprint $table){
            $table->id();
            $table->string('categoria', 15);
         });

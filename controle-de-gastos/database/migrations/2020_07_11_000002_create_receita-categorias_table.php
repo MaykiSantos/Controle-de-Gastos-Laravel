@@ -13,7 +13,7 @@ class CreateReceitaCategoriasTable extends Migration
      */
     public function up()
     {
-        Schema::create('receita-categorias', function (Blueprint $table){
+        Schema::create('receita_categorias', function (Blueprint $table){
            $table->id();
            $table->string('categoria', 15);
         });

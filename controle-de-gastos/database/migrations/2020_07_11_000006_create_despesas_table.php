@@ -23,7 +23,7 @@ class CreateDespesasTable extends Migration
             $table->timestamps();
 
             $table->foreign('id_user')->references('id')->on('users');
-            $table->foreign('id_des_cat')->references('id')->on('despesa-categorias');
+            $table->foreign('id_des_cat')->references('id')->on('despesa_categorias');
         });
     }
 

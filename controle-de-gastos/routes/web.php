@@ -22,3 +22,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/controle-de-gastos', 'Dashboard@index')->middleware('auth');
 Route::get('/controle-de-gastos/novo-mes', 'NovoMes@index')->middleware('auth');
+Route::get('/controle-de-gastos/registros-anos', 'RegistrosAno@index')->middleware('auth');
+Route::get('/controle-de-gastos/{ano}', 'RegistrosMeses@index')->middleware('auth');

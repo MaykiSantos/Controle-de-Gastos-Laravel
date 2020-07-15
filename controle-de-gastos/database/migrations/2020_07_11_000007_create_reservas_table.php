@@ -23,7 +23,7 @@ class CreateReservasTable extends Migration
             $table->timestamps();
 
             $table->foreign('id_user')->references('id')->on('users');
-            $table->foreign('id_res_cat')->references('id')->on('reserva-categorias');
+            $table->foreign('id_res_cat')->references('id')->on('reserva_categorias');
         });
     }
 
