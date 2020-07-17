@@ -15,19 +15,29 @@ use phpDocumentor\Reflection\Types\Collection;
 class ConsultaBanco extends Controller
 {
 
-    public function registrosUsuario(User $usuario)
+    public function registrosUsuario(User $usuario, int $mes, int $ano)
     {
+
         $despesas= Despesa::query()
             ->where('id_user', '=', "$usuario->id")
             ->join('despesa_categorias', 'despesas.id_des_cat', '=', 'despesa_categorias.id')
+            ->select('despesas.*', 'despesa_categorias.categoria')
+            ->whereYear('data_referencia', '=', "$ano")
+            ->whereMonth('data_referencia', '=', "$mes")
             ->get();
         $receitas= Receita::query()
             ->where('id_user', '=', "$usuario->id")
             ->join('receita_categorias', 'receitas.id_rec_cat', '=', 'receita_categorias.id')
+            ->select('receitas.*', 'receita_categorias.categoria')
+            ->whereYear('data_referencia', '=', "$ano")
+            ->whereMonth('data_referencia', '=', "$mes")
             ->get();
         $reservas= Reserva::query()
             ->where('id_user', '=', "$usuario->id")
             ->join('reserva_categorias', 'reservas.id_res_cat', '=', 'reserva_categorias.id')
+            ->select('reservas.*', 'reserva_categorias.categoria')
+            ->whereYear('data_referencia', '=', "$ano")
+            ->whereMonth('data_referencia', '=', "$mes")
             ->get();
 
         return [

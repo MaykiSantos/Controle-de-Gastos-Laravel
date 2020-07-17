@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Receita extends Model
 {
+    protected $fillable= ['id_user', 'id_cat_rec', 'valor', 'descricao', 'data_referencia'];
+
     public function user()
     {
         return $this->belongsTo(User::class, 'id');

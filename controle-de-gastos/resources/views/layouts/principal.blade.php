@@ -116,21 +116,24 @@
                         <img src="{{asset('img\lista.svg')}}" alt="" width="40px">
                         <p>Registros</p>
                     </a>
-                    <a href="#" class="list-group-item-action mx-auto text-center p-2">
-                        <img src="{{asset('img\contas.svg')}}" alt="" width="40px">
-                        <p>Contas</p>
-                    </a>
-                    <a href="#" class="list-group-item-action mx-auto text-center p-2">
-                        <img src="{{asset('img\relatorio.svg')}}" alt="" width="40px">
-                        <p>Relarotios</p>
-                    </a>
-                    <a href="/controle-de-gastos/novo-mes" class="list-group-item-action mx-auto text-center p-2">
+                    <a class="list-group-item-action mx-auto text-center p-2" data-toggle="modal" data-target="#modalNovoMes">
                         <img src="{{asset('img\novo-mes.svg')}}" alt="" width="40px">
                         <p>Novo Mês</p>
                     </a>
+
                 </div>
             </div>
             <div class="col-11"><!--Conteudo lateral-->
+                @include('layouts.modal-novo-mes',['idModal'=>'modalNovoMes',
+                                'tituloModal'=> 'Adicionar Mês',
+                                'corTitulo'=>'text-dark',
+                                'linkRequisicao'=>'/controle-de-gastos/criar-mes'])
+
+                @if(!empty($mensagem))
+                    <div class="alert alert-success">
+                        {{ $mensagem }}
+                    </div>
+                @endif
 
                 @yield('conteudo-lateral')
 

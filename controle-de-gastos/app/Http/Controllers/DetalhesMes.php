@@ -2,38 +2,36 @@
 
 namespace App\Http\Controllers;
 
-use App\Despesa;
-use App\DespesaCategoria;
 use App\Http\Controllers\help\ConsultaBanco;
-use App\Receita;
-use App\ReceitaCategoria;
-use App\Reserva;
-use App\ReservaCategoria;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class NovoMes extends Controller
+class DetalhesMes extends Controller
 {
-    public function index(Request $request)
+    public function index(Request $request, $ano, $mes)
     {
         $usuario= $request->user();
         $consulta= new ConsultaBanco();
-        $registros= $consulta->registrosUsuario($request->user(), 3, 2020);
+        $registros= $consulta->registrosUsuario($request->user(), $mes, $ano);
 
         $despesaCategorias= DB::table('despesa_categorias')->get();
         $receitaCategorias= DB::table('receita_categorias')->get();
         $reservaCategorias = DB::table('reserva_categorias')->get();
 
+        $descricao = collect(['NULL', 'Janeiro','Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']);
+        $mesDescricao= collect(["$mes"=>"$descricao[$mes]"]);
 
-        return view('novo-mes', [
+        return view('detalhes-mes', [
             'usuario'=> $usuario,
+            'mesDescricao'=> $mesDescricao,
+            'mes'=> $mes,
+            'ano'=> $ano,
             'despesas'=> $registros['despesas'],
             'receitas'=> $registros['receitas'],
             'reservas'=> $registros['reservas'],
             'despesaCategorias'=> $despesaCategorias,
             'receitaCategorias'=> $receitaCategorias,
             'reservaCategorias'=> $reservaCategorias
-
         ]);
     }
 }

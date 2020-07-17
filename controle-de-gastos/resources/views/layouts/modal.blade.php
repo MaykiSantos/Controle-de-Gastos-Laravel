@@ -4,7 +4,7 @@
             <div class="modal-header">
                 <h4 class="modal-title {{$corTitulo}}"><strong>{{$tituloModal}}</strong></h4>
             </div>
-            <form action="{{$linkRequisicao}}" method="POST">
+            <form action="{{$linkRequisicao}}" method="post">
                 @csrf
                 <div class="modal-body">
                     <div class="row">
@@ -13,7 +13,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">Valor</span>
                                 </div>
-                                <input type="number" min="0" class="form-control" name="" value="">
+                                <input type="number" min="0" class="form-control" name="valor" value="{{isset($valor) ? $valor : ''}}" id="valor">
                             </div>
                         </div>
                         <div class="col-6">
@@ -21,10 +21,10 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">Categoria</span>
                                 </div>
-                                <select class="form-control" name="">
-                                    <option selected>Selecione uma categoria...</option>
+                                <select class="form-control" name="categoria" id="categoria">
+                                    <option selected>{{isset($categoria) ? $categoria : 'Selecione uma categoria...'}}</option>
                                     @foreach($categorias as $categoria)
-                                    <option>{{$categoria->categoria}}</option>
+                                        <option>{{$categoria->categoria}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -34,7 +34,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">Descrição</span>
                                 </div>
-                                <input type="text" class="form-control" name="" value="">
+                                <input type="text" class="form-control" id="descricao" name="descricao" value="{{isset($descricao) ? $descricao : ''}}">
                             </div>
                         </div>
                     </div>
