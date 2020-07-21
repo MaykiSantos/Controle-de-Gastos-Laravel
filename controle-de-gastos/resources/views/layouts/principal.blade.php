@@ -7,13 +7,29 @@
     <link href="{{asset('/img/logo-fovicon.png')}}" rel="shortcut icon" type="image/x-icon" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--CSS graficos-->
+
     <!--CSS-->
     <style>
         body{
             margin-top: 56px;
         }
 
-        .icone-resumo{
+        #icones-topo{
+            margin-top: 20px;
+        }
+        .valor{
+            font-size: 1.5em;
+            margin-top: 13%;
+            margin-left: 36%;
+
+        }
+        .titulo{
+            font-size: 1em;
+            font-weight: bold;
+            margin-top: 6%;
+            margin-left: 33%;
+
 
         }
         .descricao-resumo-saldo{
@@ -50,9 +66,7 @@
             position: absolute;
             width: 80%;
         }
-        #area-graficos{
-            margin-top: 170px;
-        }
+
         #grafico-despesas-mes{
             width: 100%;
             height: 350px
@@ -74,7 +88,7 @@
 
         #grafico-geral{
             width: 100%;
-            height: 220px
+            height: 320px
         }
 
         #mes-ano{
@@ -149,6 +163,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- ICONES -->
     <script src="https://kit.fontawesome.com/df83c22642.js" crossorigin="anonymous"></script>
-    <!-- JavaScript (Opcional) -->
+    <!-- JavaScript (graficos) -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@ class CreateDespesaCategoriasTable extends Migration
     {
         Schema::create('despesa_categorias', function (Blueprint $table){
            $table->id();
-           $table->string('categoria', 15);
+           $table->string('categoria', 30);
         });
     }
 

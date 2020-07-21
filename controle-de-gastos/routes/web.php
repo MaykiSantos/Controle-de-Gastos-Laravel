@@ -20,7 +20,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/controle-de-gastos', 'Dashboard@index')->middleware('auth');
+Route::post('/controle-de-gastos/dados-mes', 'Dashboard@graficosPiza')->middleware('auth');
+Route::post('/controle-de-gastos/dados-ultimo-ano', 'Dashboard@graficosLinha')->middleware('auth');
+Route::post('/controle-de-gastos/dados-mes-barra', 'Dashboard@graficosBarra')->middleware('auth');
+
 Route::get('/controle-de-gastos/novo-mes', 'NovoMes@index')->middleware('auth');
 Route::get('/controle-de-gastos/registros-anos', 'RegistrosAno@index')->middleware('auth');
 Route::get('/controle-de-gastos/{ano}', 'RegistrosMeses@index')->middleware('auth');

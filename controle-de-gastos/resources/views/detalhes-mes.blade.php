@@ -115,6 +115,7 @@
                                 'linkRequisicao'=> "/controle-de-gastos/{$ano}/{$mes}/editar-despesa/{$despesa->id}"])
 
                                 <form action="/controle-de-gastos/{{$ano}}/{{$mes}}/apagar-despesa/{{$despesa->id}}" method="POST">
+                                    @csrf
                                     <button class="btn btn-outline-danger btn-sm" >
                                         <i class="far fa-trash-alt"></i>
                                         Excluir
@@ -159,6 +160,7 @@
                                 'linkRequisicao'=> "/controle-de-gastos/{$ano}/{$mes}/editar-reserva/{$reserva->id}"])
 
                                 <form action="/controle-de-gastos/{{$ano}}/{{$mes}}/apagar-reserva/{{$reserva->id}}" method="POST">
+                                    @csrf
                                     <button class="btn btn-outline-danger btn-sm" >
                                         <i class="far fa-trash-alt"></i>
                                         Excluir
