@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="{{asset('/img/logo-fovicon.png')}}" rel="shortcut icon" type="image/x-icon" />
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -24,7 +25,7 @@
 
     <style>
         body{
-            background-image: url({{asset('img/fundoHome.jpg')}});
+            background-image: url({{asset('img/fundoHomeControleGastos.jpg')}});
         }
     </style>
 </head>
@@ -33,7 +34,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Projetos
+                    Controle de Gastos
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

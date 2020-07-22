@@ -20,6 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('doc', 'Documentacao@index');
 
 Route::get('/controle-de-gastos', 'Dashboard@index')->middleware('auth');
 Route::post('/controle-de-gastos/dados-mes', 'Dashboard@graficosPiza')->middleware('auth');

@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{asset('/img/logo-fovicon.png')}}" rel="shortcut icon" type="image/x-icon" />
 
         <title>Projetos</title>
 
@@ -12,7 +13,7 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-image: url({{asset('img/fundoHome.jpg')}});
+                background-image: url({{asset('img/fundoHomeControleGastos.jpg')}});
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -81,12 +82,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Projetos
+                    Controle de Gastos
                 </div>
 
                 <div class="links">
-                    <a href="/controle-de-gastos">Controle de Gastos</a>
-                    <a href="https://github.com/MaykiSantos">GitHub</a>
+                    <a href="doc">Documentação</a>
+                    <a href="login">Entrar</a>
                 </div>
             </div>
         </div>
