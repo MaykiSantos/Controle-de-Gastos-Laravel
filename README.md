@@ -8,7 +8,7 @@ funcional e é possivel a utilização de vários usuários. Este tambem é o pr
 | :sparkles: Nome        | **Controle-de-Gastos**
 | :label: Tecnologias | PHP, html, laravel, mysql, css, Bootstrap (tecnologias utilizadas)
 | :rocket: URL         | https://meus-projetos.com/index.php/2021/07/16/projeto-controle-de-gastos/
-
+| :fire: Desafio     | 
 
 ![imagem](https://user-images.githubusercontent.com/58126683/88125442-b1211880-cba5-11ea-9814-45b580204086.jpg#vitrinedev)
 
